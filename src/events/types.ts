@@ -57,7 +57,7 @@ type CoreEventDispatcher<
     }
   : never;
 
-type EventDispatcher = CoreEventDispatcher & NotificationsEventDispatcher;
+type EventDispatcher = CoreEventDispatcher | NotificationsEventDispatcher;
 
 interface EventBroker {
   sendEvent(event: Event): void;

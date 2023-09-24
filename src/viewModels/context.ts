@@ -1,7 +1,8 @@
-import { Core } from "../core/main.ts";
-import { Selector } from "../state/types/selector.ts";
-import { EventDispatcher } from "../events/types.ts";
 import { createContext } from "react";
+
+import { Selector } from "@todo-list/state";
+import { Core } from "../core/main.ts";
+import { EventDispatcher } from "../events/types.ts";
 
 const CoreContext = createContext<{
   core: Core;
