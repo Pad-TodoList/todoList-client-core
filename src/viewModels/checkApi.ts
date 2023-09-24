@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Route } from "../dto/route.ts";
+
+import { RouteStatus, Route } from "@todo-list/dto";
 import { clientHttp, RequestMethods } from "../utils/clientHttp.ts";
-import { RouteStatus } from "../dto/routeStatus.ts";
 
 interface ViewModel {
   isRequestSuccess: boolean;

@@ -1,10 +1,9 @@
 import { useContext } from "react";
 import { useSelector } from "react-redux";
+
+import { Identifiable, User, Tokens } from "@todo-list/dto";
 import { Boundaries } from "../core/main.ts";
 import { CoreContext } from "./context.ts";
-import { Identifiable } from "../dto/identifiable.ts";
-import { User } from "../dto/user.ts";
-import { Tokens } from "../dto/tokens.ts";
 
 interface ViewModel {
   isRequestSuccess: boolean;

@@ -1,5 +1,5 @@
-import { Boundaries } from "../../../core/main.ts";
-import { events } from "../../../events/main.ts";
+import { Boundaries } from "@todo-list/core";
+import { events } from "@todo-list/events";
 import type { State, Selector } from "./types.ts";
 import { createStateReducer } from "../../utils/createStateReducer.ts";
 import { resetState } from "../../utils/resetState.ts";

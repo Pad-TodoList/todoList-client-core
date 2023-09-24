@@ -1,4 +1,4 @@
-import { Event } from "../../events/main";
+import { Event } from "@todo-list/events";
 import { StateReducer } from "../types/stateReducer";
 
 function getEntries<State>(map: {

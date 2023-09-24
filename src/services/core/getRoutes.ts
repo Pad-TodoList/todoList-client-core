@@ -1,6 +1,7 @@
-import { HttpClient, HttpMethods } from "../types/httpClient";
-import { Route } from "../../dto/route.ts";
+import { Route } from "@todo-list/dto";
 import { RouteStatus } from "@todo-list/dto";
+
+import { HttpClient, HttpMethods } from "../types/httpClient";
 
 function getRoutes(httpClient: HttpClient) {
   return () =>

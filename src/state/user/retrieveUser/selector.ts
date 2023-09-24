@@ -1,6 +1,6 @@
+import { user } from "@todo-list/dto";
 import { StateProvider } from "../../types/stateProvider";
 import { Selector } from "./types";
-import { user } from "../../../dto/main";
 
 function createSelector(stateProvider: StateProvider): Selector {
   return {

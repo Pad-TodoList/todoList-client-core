@@ -1,5 +1,6 @@
-import { Boundaries } from "../../../core/main.ts";
-import { events } from "../../../events/main.ts";
+import { Boundaries } from "@todo-list/core";
+import { events } from "@todo-list/events";
+import { user } from "@todo-list/dto";
 import type { State, Selector } from "./types.ts";
 import { createStateReducer } from "../../utils/createStateReducer.ts";
 import { resetState } from "../../utils/resetState.ts";
@@ -7,7 +8,6 @@ import { createSelector } from "./selector.ts";
 import { setRequestStateToPending } from "../../utils/setRequestStateToPending.ts";
 import { setRequestStateToSuccess } from "../../utils/setRequestStateToSuccess.ts";
 import { setRequestStateToFailure } from "../../utils/setRequestStateToFailure.ts";
-import { user } from "../../../dto/user.ts";
 
 const initialState: State = [];
 

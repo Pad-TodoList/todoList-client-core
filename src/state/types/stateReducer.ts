@@ -1,4 +1,4 @@
-import { Event } from "../../events/types";
+import { Event } from "@todo-list/events";
 
 type StateReducer<State, M extends Event> = (
   state: State | undefined,

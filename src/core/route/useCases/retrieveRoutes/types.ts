@@ -1,4 +1,4 @@
-import { Route } from "../../../../dto/route.ts";
+import { Route } from "@todo-list/dto";
 
 type RetrieveRoutesRequest = void;
 type RetrieveRoutesSuccess = Route[];

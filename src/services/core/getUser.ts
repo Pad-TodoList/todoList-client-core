@@ -1,4 +1,5 @@
-import { Tokens } from "../../dto/main";
+import { Tokens } from "@todo-list/dto";
+
 import { HttpClient, HttpMethods } from "../types/httpClient";
 
 function getUser(httpClient: HttpClient) {

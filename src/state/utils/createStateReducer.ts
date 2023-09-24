@@ -1,4 +1,4 @@
-import type { Event } from "../../events/types.ts";
+import type { Event } from "@todo-list/events";
 import { StateReducer } from "../types/stateReducer";
 
 type SimplifiedStateReducer<State, M extends Event> = (

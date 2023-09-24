@@ -1,5 +1,5 @@
+import { Route } from "@todo-list/dto";
 import { RequestState } from "../../types/requestState";
-import { Route } from "../../../dto/main";
 
 type Request = {
   request: RequestState;

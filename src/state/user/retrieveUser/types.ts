@@ -1,5 +1,5 @@
+import { Identifiable, User, Tokens } from "@todo-list/dto";
 import { RequestState } from "../../types/requestState";
-import { Identifiable, User, Tokens } from "../../../dto/main";
 
 type Request = {
   request: RequestState;

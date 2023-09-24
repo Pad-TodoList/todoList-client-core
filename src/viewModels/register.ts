@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { Tokens } from "../dto/tokens.ts";
-import { User } from "../dto/user.ts";
+import { Tokens, User } from "@todo-list/dto";
 import { clientHttp, RequestMethods } from "../utils/clientHttp.ts";
 
 interface ViewModel {

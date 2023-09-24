@@ -1,8 +1,9 @@
 import { useContext } from "react";
 import { useSelector } from "react-redux";
+
+import { Route } from "@todo-list/dto";
 import { Boundaries } from "../core/main.ts";
 import { CoreContext } from "./context.ts";
-import { Route } from "../dto/route.ts";
 
 interface ViewModel {
   isRequestSuccess: boolean;
