@@ -5,21 +5,30 @@ import {
   UserBoundaries,
   UserDependencies,
 } from "./user";
+import {
+  createRouteCore,
+  RoutesBoundaries,
+  RoutesCore,
+  RoutesDependencies,
+  RoutesUseCases,
+} from "./route";
 
 const UseCases = {
   ...UserUseCases,
+  ...RoutesUseCases,
 };
 
-type UseCases = UserUseCases;
+type UseCases = UserUseCases & RoutesUseCases;
 
-type Boundaries = UserBoundaries;
+type Boundaries = UserBoundaries & RoutesBoundaries;
 
-type Core = UserCore;
+type Core = UserCore & RoutesCore;
 
-type Dependencies = UserDependencies;
+type Dependencies = UserDependencies & RoutesDependencies;
 function createCore(dependencies: Dependencies): Core {
   return {
     ...createUserCore(dependencies),
+    ...createRouteCore(dependencies),
   };
 }
 

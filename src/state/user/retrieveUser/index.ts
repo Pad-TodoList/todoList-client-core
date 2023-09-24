@@ -5,9 +5,9 @@ import { createStateReducer } from "../../utils/createStateReducer.ts";
 import { resetState } from "../../utils/resetState.ts";
 import { createSelector } from "./selector.ts";
 import { setRequestStateToPending } from "../../utils/setRequestStateToPending.ts";
-import { user } from "@todo-list/dto";
 import { setRequestStateToSuccess } from "../../utils/setRequestStateToSuccess.ts";
 import { setRequestStateToFailure } from "../../utils/setRequestStateToFailure.ts";
+import { user } from "../../../dto/user.ts";
 
 const initialState: State = [];
 

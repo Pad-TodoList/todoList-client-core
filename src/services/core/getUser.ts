@@ -19,7 +19,7 @@ function getUser(httpClient: HttpClient) {
         email: response.email,
         password: response.password,
       }))
-      .catch((e) => Promise.reject({ ...e, message: e.detail || "" }));
+      .catch((e) => Promise.reject({ message: e || "" }));
 }
 
 export { getUser };
